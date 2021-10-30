@@ -1,0 +1,82 @@
+@import "bouttons.css";
+
+section img#ciel{
+	z-index: 1;
+	width: 2000px;
+	height: auto;
+	left: -50em;
+	margin-top: -60px;
+	margin-left: 40%;
+}
+
+section img#aura{
+	z-index: 2;
+	width: 400px;
+	height: auto;
+	margin-top: -50px;
+	margin-left: 40%;
+	left: 6em;
+	mix-blend-mode: screen;
+}
+
+section img#soleil{
+	z-index: 3;
+	width: 160px;
+	height: auto;
+	margin-top: 70px;
+	margin-left: 40%;
+	left: 13em;
+	mix-blend-mode: screen;
+}
+
+section img#montagne2{
+	z-index: 4;
+	width: 1700px;
+	height: auto;
+	left: -20em;
+	margin-top: 120px;
+	margin-left: 40%;
+}
+
+section img#nuages{
+	z-index: 5;
+	width: 1800px;
+	height: auto;
+	margin-top: 120px;
+	margin-left: 20%;
+}
+
+section img#montagne1{
+	z-index: 6;
+	width: 1700px;
+	height: auto;
+	left: -40em;
+	margin-top: 0px;
+	margin-left: 30%;
+}
+
+section img#green_boots{
+	z-index: 7;
+	width: 150px;
+	height: auto;
+	left: 0em;
+	margin-top: 600px;
+	margin-left: 30%;
+}
+
+.sec{
+	background: #545eaf;
+}
+
+section::before{
+	background: linear-gradient(to top,#545eaf,transparent);
+}
+
+#text{
+	z-index: 7;
+	left: 4.7em;
+}
+#btn{
+	z-index: 7;
+}
+

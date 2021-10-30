@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Green boots - Ascension</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image2.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Le départ</a></li>
+				<li><a href="#" class="active">L'ascension</a></li>
+				<li><a href="epreuve.html">L'épreuve</a></li>
+				<li><a href="epilogue.html">Épilogue</a></li>
+			</ul>
+		</header>
+		<section>
+
+			<img src="../assets/image2/ciel2.png" id="ciel2">
+			<img src="../assets/image2/homme2.png" id="homme2">
+			<img src="../assets/image2/montagne1.png" id="montagne1">
+			<img src="../assets/image2/montagne2.png" id="montagne2">
+			<img src="../assets/image2/montagne3.png" id="montagne3">
+			<img src="../assets/image2/pont.png" id="pont">
+			
+			
+			<h2 id="text">L'ascension</h2>
+			<a href="#sec" id="btn">Grimper</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Ascension</h2>
+			<p> Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			</p>
+			<a href="epreuve.html" id="btn2">Prochaine étape : L'epreuve</a>
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel2 = document.getElementById('ciel2');
+			let homme2 = document.getElementById('homme2');
+			let montagne1 = document.getElementById('montagne1');
+			let montagne2 = document.getElementById('montagne2');
+			let montagne3 = document.getElementById('montagne3');
+			let pont = document.getElementById('pont');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+				
+				ciel2.style.top = value * 0.9 + 'px';
+				montagne3.style.top = value * 0.7 + 'px';
+				montagne2.style.top = value * 0.5 + 'px';
+				montagne1.style.top = value * 0.3 + 'px';
+				pont.style.top = value * 0.2 + 'px';
+				homme2.style.top = value * 0.2 + 'px';
+
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+
+			})
+		</script>
+
+	</body>
+</html>

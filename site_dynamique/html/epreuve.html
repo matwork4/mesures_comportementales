@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Green boots - Epreuve</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image3.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Le départ</a></li>
+				<li><a href="ascension.html">L'ascension</a></li>
+				<li><a href="#" class="active">L'épreuve</a></li>
+				<li><a href="epilogue.html">Épilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="../assets/image3/roches.png" id="roches">
+			<img src="../assets/image3/rocher.png" id="rocher">
+			<img src="../assets/image3/humain.png" id="humain">
+			<img src="../assets/image3/ciel.png" id="ciel">
+			<img src="../assets/image3/etoiles.png" id="etoiles">
+			<img src="../assets/image3/lune.png" id="lune">
+			<img src="../assets/image3/montagnes.png" id="montagnes">
+			<img src="../assets/image3/nuages.png" id="nuages">
+
+			
+			<h2 id="text">L'epreuve</h2>
+			<a href="#sec" id="btn">Lutter</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Epreuve</h2>
+			<p> Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			Green Boots est une dépouille non identifiée d'un alpiniste devenue un repère visuel pour les expéditions qui s'attaquent à l'ascension du mont Everest par la voie d'accès Nord. Toutes les expéditions en provenance du versant tibétain passent en effet près du petit abri rocheux sous lequel il repose, à près de 8 460 mètres d'altitude, entre le camp VI et les trois ressauts qui marquent les derniers obstacles de l'ascension sur l'arête Nord-Est. Ce surnom est une allusion à la couleur verte des chaussures d'alpinisme (« green boots » en anglais) que le corps porte encore.
+			<br/><br/> 
+			</p>
+			<a href="epilogue.html" id="btn2">Prochaine étape : Epilogue</a>
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel = document.getElementById('ciel');
+			let humain = document.getElementById('humain');
+			let etoiles = document.getElementById('etoiles');
+			let lune = document.getElementById('lune');
+			let montagnes = document.getElementById('montagnes');
+			let nuages = document.getElementById('nuages');
+			let rocher = document.getElementById('rocher');
+			let roches = document.getElementById('roches');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				etoiles.style.left = value * -2 + 'px';
+				etoiles.style.top = value * 0.4 + 'px';
+				nuages.style.left = value * 0.6 + 'px' ;
+				nuages.style.top = value * 0.3 + 'px' ;
+				lune.style.top = value * 1.2 + 'px' ;
+				montagnes.style.top = value * 0.6 + 'px' ;
+				rocher.style.top = value * 0.3 + 'px' ;
+				
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>
