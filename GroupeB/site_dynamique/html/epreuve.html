@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Green boots - Epreuve</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image3.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Le départ</a></li>
+				<li><a href="ascension.html">L'ascension</a></li>
+				<li><a href="#" class="active">L'épreuve</a></li>
+				<li><a href="epilogue.html">Épilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="../assets/image3/rochers.png" id="roches">
+			<img src="../assets/image3/rocher.png" id="rocher">
+			<img src="../assets/image3/humain.png" id="humain">
+			<img src="../assets/image3/ciel_nuit.png" id="ciel">
+			<img src="../assets/image3/etoiles.png" id="etoiles">
+			<img src="../assets/image3/lune.png" id="lune">
+			<img src="../assets/image3/montagnes.png" id="montagnes">
+			<img src="../assets/image3/nuages.png" id="nuages">
+			<img src="../assets/image3/sol_enneige.png" id="neige">
+			<img src="../assets/image3/brume1.png" id="brume1">
+			<img src="../assets/image3/brume2.png" id="brume2">
+
+			
+			<h2 id="text">L'epreuve</h2>
+			<a href="#sec" id="btn">Lutter</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Epreuve</h2>
+			<p> Le lendemain, Ahaan se remit en chemin. À midi, il avait déjà dépassé les 6 000 mètres ! Il se reposa donc pour prendre un repas bien mérité. Mais au moment d'ouvrir son sac de provisions, il entendit un bruit sec et sonore dans les buissons. Le sol se mit à trembler et un grognement raisonna dans toute la vallée. C'était un ourson noir de l’Everest ! Sortant de nulle part, il se jeta sur le sac de provisions et s'enfuit avec. Ahaan ne put rien faire, même si ce n'était qu’un ourson, sa patte faisait au moins la taille de son visage. Une griffure lui aurait été fatale ! Ahaan n’avait plus le choix, même avec le ventre vide, il continua son périple. Après tout, il lui était déjà arrivé de ne pas manger pendant plusieurs jours...
+			<br/><br/> 
+			Il faisait de plus en plus froid. De plus, à 7 000 mètres le manque d’oxygène se fait ressentir. C'était le moment de sortir les bouteilles d’oxygène. Ses muscles commencèrent à se tendre, il était à bout de souffle et toujours pas d’Edelweiss à l’horizon. Il fallait continuer. 
+			<br/><br/> 
+			Son visage pelait, ses doigts bougeaient à peine et il ne sentait plus ses pieds. Ahaan avait du mal à respirer, sa dernière bouteille se vidait à vue d'œil. Des pensées néfastes traversèrent son esprit, il commença pour la première fois à regretter d'être venu. Il pensa même à renoncer, à faire demi-tour, mais quand il leva la tête, il aperçut au loin le sommet de la montagne, là où prennent vie les précieuses fleurs blanches. Ahann regroupa ses dernières forces pour continuer son ascension.
+			<br/><br/> 
+			</p>
+			<a href="epilogue.html" id="btn2">Prochaine étape : Epilogue</a>
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel = document.getElementById('ciel');
+			let humain = document.getElementById('humain');
+			let etoiles = document.getElementById('etoiles');
+			let lune = document.getElementById('lune');
+			let montagnes = document.getElementById('montagnes');
+			let nuages = document.getElementById('nuages');
+			let rocher = document.getElementById('rocher');
+			let roches = document.getElementById('roches');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				etoiles.style.left = value * -2 + 'px';
+				etoiles.style.top = value * 0.4 + 'px';
+				nuages.style.left = value * 0.6 + 'px' ;
+				nuages.style.top = value * 0.3 + 'px' ;
+				lune.style.top = value * 1.2 + 'px' ;
+				montagnes.style.top = value * 0.6 + 'px' ;
+				rocher.style.top = value * 0.2 + 'px' ;
+
+				brume1.style.left = value * -2 + 'px' ;
+				brume2.style.left = value * 1.2 + 'px' ;
+				
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>

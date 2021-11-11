@@ -1,0 +1,110 @@
+@media only screen and (min-width: 900px) {
+    .texte{
+
+        display: inline-flex;
+        align-content:flex-start;
+        font-size: 1.3em;
+    }
+}
+
+#image_Everest{   
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5995c9;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+}
+        
+li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 150%;
+} 
+    
+li a:hover {
+    background-color: #295288;
+}
+   
+#titre{
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 200%;
+    color: white;
+}
+    
+.texte img{
+    margin: 2%;
+    width: 40%;
+    object-fit: cover;
+}
+
+
+.texte p{
+    align-content: center;
+    margin: 2%;
+}
+
+.container {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: beige;
+}
+
+.contenu{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3{
+    font-size: 2.5em;
+    background: #5995c9;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #295288, 8px 8px 10px 5px dimgrey;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+    
+#button, #button2{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #5995c9;
+    color: #ffff;
+    font-size: 1.5em;
+    transform: translateY(100px);
+    margin-bottom: 180px;
+    margin-left: 50px;
+    box-shadow: 0 0 0 2px #295288;
+}
+
+#button2 {
+    background-color: orange;
+    box-shadow: 0 0 0 2px darkorange;
+}
+
+#button:hover {
+    background-color: #295288;
+}
+
+#button2:hover {
+    background-color: orangered;
+}

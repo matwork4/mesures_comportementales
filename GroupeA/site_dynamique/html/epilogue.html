@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Green boots - Epilogue</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image4.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Le départ</a></li>
+				<li><a href="ascension.html">L'ascension</a></li>
+				<li><a href="epreuve.html">L'épreuve</a></li>
+				<li><a href="#" class="active">Épilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			
+			<img src="../assets/image4/aura.png" id="aura">
+			<img src="../assets/image4/ciel.png" id="ciel">
+			<img src="../assets/image4/green_boots.png" id="green_boots">
+			<img src="../assets/image4/montagne1.png" id="montagne1">
+			<img src="../assets/image4/montagne2.png" id="montagne2">
+			<img src="../assets/image4/nuages.png" id="nuages">
+			<img src="../assets/image4/soleil.png" id="soleil">
+
+			
+			<h2 id="text">Epilogue</h2>
+			<a href="#sec" id="btn">Observer</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Epilogue</h2>
+			<p> Ahaan était maintenant à 8 400 mètres d'altitude, mais son corps lâcha. Il se trouvait à terre, il ne voulait pas abandonner. Il se mit à ramper dans la neige, Mishka n'était plus que sa seule pensée, il devait la sauver. L’Edelweiss était à seulement quelques mètres, mais Ahaan n’avait plus d'oxygène. Il tendit le bras pour l’attraper, mais son corps ne répondait plus. Ahaan s’en était allé, son corps lui resta là, figé par le froid, à quelques centimètres de ce qui aurait pu sauver sa bien aimée.
+			<br/><br/>
+			Aujourd’hui encore, le corps d’Ahaan est conservé par la glace. Il repose à 8 460 mètres d’altitude. Ses bottes vertes sont devenues un symbole, un repère pour ceux qui gravissent l’Everest. Nous ne savons pas ce qui est arrivé à Mishka, mais nous pouvons le deviner. Peut-être se sont-ils retrouvés là-haut au paradis, entourés d'Edelweiss.
+			<br/><br/> 
+			</p>
+			<a href="depart.html" id="btn2">Retour au départ</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdS2RoP5Hvb8XnPyx_1qthd3sy1GcUdHizN3xeJMbV6ULBQmA/viewform?embedded=true" id="btn3">Questionnaire</a> 
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel = document.getElementById('ciel');
+			
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				aura.style.top = value * 1 + 'px';
+				soleil.style.top = value * 1 + 'px';
+				nuages.style.left = value * 1 + 'px';
+				nuages.style.top = value * 0.6 + 'px';
+				montagne2.style.top = value * 0.6 + 'px';
+				montagne1.style.top = value * 0.4 + 'px';
+				green_boots.style.top = value * 0.4 + 'px';
+				
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>

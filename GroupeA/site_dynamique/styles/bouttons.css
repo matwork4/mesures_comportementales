@@ -101,7 +101,7 @@ section img{
 
 }
 
-#btn, #btn2{
+#btn, #btn2, #btn3{
 	text-decoration: none;
 	display: inline-block;
 	padding: 8px 30px;
@@ -114,6 +114,14 @@ section img{
 }
 #btn2{
 	margin-bottom: 100px;
+}
+#btn3{
+	margin-left: 50px;
+	background-color: lightcoral;
+    box-shadow: 0 0 0 2px rebeccapurple;
+}
+#btn3:hover{
+	background-color: rebeccapurple;
 }
 
 .sec{
