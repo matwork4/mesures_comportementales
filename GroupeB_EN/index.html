@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Green boots - Departure </title>
+		<link rel="stylesheet" type="text/css" href="site_dynamique/styles/image1.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="site_dynamique/html/depart.html" class="active">Departure</a></li>
+				<li><a href="site_dynamique/html/ascension.html">Ascension</a></li>
+				<li><a href="site_dynamique/html/epreuve.html">Event</a></li>
+				<li><a href="site_dynamique/html/epilogue.html">Epilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="site_dynamique/assets/image1/ciel.png" id="ciel">
+			<img src="site_dynamique/assets/image1/montagnes.png" id="mountains_behind">
+			<img src="site_dynamique/assets/image1/terrain.png" id="terrain">
+			<img src="site_dynamique/assets/image1/oiseaux.png" id="oiseaux">
+			<img src="site_dynamique/assets/image1/foret.png" id="forest_front">
+			<img src="site_dynamique/assets/image1/homme.png" id="homme">
+
+			
+			<h2 id="text">Green boots</h2>
+			<a href="#sec" id="btn">Explore</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Departure</h2>
+			<p> This is the story of Ahaan, born in a small fishing village called Kollidam, in South India.  
+				<br/><br/>
+				His whole life was about one thing: his farm. It was here that he grew wheat and raised chickens. But one day, Ahaan met Mishka, the daughter of a rich fisherman in the village. Soon they fell madly in love with each other, Ahaan discovered a feeling he had never felt before, he was happy and thought about her all the time. 
+				Unfortunately, Mishka's wasn't agree. His daughter could not marry a "Sudra*", as he called him. (* Caste system in India.) In spite of his many warnings and to ensure that they would not see each other again, Mishka's father took the drastic decision to lock up his daughter when he went to sea.
+				<br/><br/>
+				Mishka could hardly see the sunlight anymore, she was depressed. One day, when the old fisherman came home, he found his daughter lying on the ground, shivering and full of sweat. He called the best doctors in Kollidam, the druids, the witches, but no one could save poor Mishka. Then one of the witches gave him hope: "A plant can save her: the Frosted Edelweiss! But it only grows on the top of the highest snowy mountains." 
+				<br/><br/>
+				The news spread throughout the village, but since he did not live in a mountainous region, his daughter was already doomed. When Ahaan heard the news, he took his courage in both hands and confronted the old fisherman: "I will climb Everest to find the frosted edelweiss, I will save your daughter and you will give me her hand. The father, seeing his last hope, nodded to Ahaan, who immediately left for Nepal.
+			<br/><br/> 
+			</p>
+			<a href="site_dynamique/html/ascension.html" id="btn2">Next step : ascension</a>
+		</div>
+
+		<script type="text/javascript">
+			let ciel = document.getElementById('ciel');
+			let mountains_behind = document.getElementById('mountains_behind');
+			let terrain = document.getElementById('terrain');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+			let forest_front = document.getElementById('forest_front');
+			let header = document.querySelector('header');
+
+			let homme = document.getElementById('homme');
+			let oiseaux = document.getElementById('oiseaux');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				mountains_behind.style.top = value * 0.6 + 'px';
+				terrain.style.top = value * 0.4 + 'px';
+				oiseaux.style.left = value * -2 + 'px';
+				oiseaux.style.top = value * 0.4 + 'px';
+
+				text.style.marginLeft = value * 2.5 + 'px';
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+
+			})
+		</script>
+
+	</body>
+</html>

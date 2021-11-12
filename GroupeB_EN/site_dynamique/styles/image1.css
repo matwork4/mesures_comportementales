@@ -1,0 +1,50 @@
+@import "bouttons.css";
+
+
+section img#ciel{
+	z-index: 1;
+	width: 2000px;
+	height: auto;
+	
+}
+
+section img#mountains_behind{
+	z-index: 2;
+	width: 2200px;
+	height: auto;
+	margin-top: 100px;
+	margin-left: -10%;
+}
+
+section img#terrain{
+	z-index: 3;
+	width: 2000px;
+	height: auto;
+	margin-top: 300px;
+}
+
+section img#oiseaux{
+	z-index: 4;
+	width: 200px;
+	height: auto;
+	margin-top: 200px;
+	margin-left: 70%;
+}
+
+section img#forest_front{
+	z-index: 6;
+	width: 2700px;
+	height: auto;
+	margin-top: -30px;
+	margin-left: 30%;
+	left: -50em;
+}
+
+section img#homme{
+	z-index: 7;
+	width: 220px;
+	height: auto;
+	margin-top: 570px;
+	margin-left: 30%;
+	left: 20em;
+}

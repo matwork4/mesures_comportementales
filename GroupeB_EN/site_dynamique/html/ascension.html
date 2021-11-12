@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Green boots - Ascension</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image2.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Departure</a></li>
+				<li><a href="#" class="active">Ascension</a></li>
+				<li><a href="epreuve.html">Event</a></li>
+				<li><a href="epilogue.html">Epilogue</a></li>
+			</ul>
+		</header>
+		<section>
+
+			<img src="../assets/image2/ciel2.png" id="ciel2">
+			<img src="../assets/image2/homme2.png" id="homme2">
+			<img src="../assets/image2/montagne1.png" id="montagne1">
+			<img src="../assets/image2/montagne2.png" id="montagne2">
+			<img src="../assets/image2/montagne3.png" id="montagne3">
+			<img src="../assets/image2/pont.png" id="pont">
+			
+			
+			<h2 id="text">Ascension</h2>
+			<a href="#sec" id="btn">Climb</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Ascension</h2>
+			<p> Having just arrived at the bottom of this imposing mountain, Ahaan realized that he was not sufficiently prepared. Still determined, he went to Kathmandu, the nearest city, to buy warm clothes in the shops despite his meager savings.    
+				<br/><br/> 
+				Once dressed, he began his ascent following the main paths. On his way, he crossed some regulars of the mountain walking around and sometimes wanting to start a discussion with the young Indian. But Ahaan had no time to lose! He had only one goal in mind: to find the Frosted Edelweiss and bring it back. 
+				<br/><br/> 
+				He climbed again and again up to 3000 meters of altitude. He then found himself in front of a magnificent but rustic suspension bridge, which he began the perilous crossing. No sooner said than done, the wind began to blow. The wind was blowing in the ropes of the bridge, which made it wobble from left to right. Ahann thought about his promise and continued to walk with a firm step. As the hunger and cold began to make themselves felt, the bridge was swaying more and more, when suddenly... His foot touched the ground. He had arrived on the other side!  
+				<br/><br/> 
+				It was time for Ahaan to find a shelter and take refuge for the night. Fortunately, he had all the necessary equipment. He prepared himself a good hot meal and then fell asleep quickly, until the next day...
+			<br/><br/> 
+			</p>
+			<a href="epreuve.html" id="btn2">Next step : Event</a>
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel2 = document.getElementById('ciel2');
+			let homme2 = document.getElementById('homme2');
+			let montagne1 = document.getElementById('montagne1');
+			let montagne2 = document.getElementById('montagne2');
+			let montagne3 = document.getElementById('montagne3');
+			let pont = document.getElementById('pont');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+				
+				ciel2.style.top = value * 0.9 + 'px';
+				montagne3.style.top = value * 0.7 + 'px';
+				montagne2.style.top = value * 0.5 + 'px';
+				montagne1.style.top = value * 0.3 + 'px';
+				pont.style.top = value * 0.2 + 'px';
+				homme2.style.top = value * 0.2 + 'px';
+
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+
+			})
+		</script>
+
+	</body>
+</html>

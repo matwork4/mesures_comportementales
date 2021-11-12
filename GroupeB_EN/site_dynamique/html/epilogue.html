@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Green boots - Epilogue</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image4.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Departure</a></li>
+				<li><a href="ascension.html">Ascension</a></li>
+				<li><a href="epreuve.html">Event</a></li>
+				<li><a href="#" class="active">Epilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			
+			<img src="../assets/image4/aura.png" id="aura">
+			<img src="../assets/image4/ciel.png" id="ciel">
+			<img src="../assets/image4/green_boots.png" id="green_boots">
+			<img src="../assets/image4/montagne1.png" id="montagne1">
+			<img src="../assets/image4/montagne2.png" id="montagne2">
+			<img src="../assets/image4/nuages.png" id="nuages">
+			<img src="../assets/image4/soleil.png" id="soleil">
+
+			
+			<h2 id="text">Epilogue</h2>
+			<a href="#sec" id="btn">Watch</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Epilogue</h2>
+			<p> Ahaan was now at 8,400 meters, but his body gave out. He was on the ground, he did not want to give up. He started to crawl in the snow, Mishka was his only thought, he had to save her. An Edelweiss flower was only a few feet away, but Ahaan had no more oxygen. He reached out to grab it, but his body didn't respond. Ahaan was gone, his body remained there, frozen by the cold, a few centimeters away from what could have saved his beloved.
+			<br/><br/>
+			Even today, the body of Ahaan is preserved by the ice. He lies at an altitude of 8,460 meters. His green boots have become a symbol, a landmark for those who climb Everest. We don't know what happened to Mishka, but we can guess. Perhaps they found themselves up there in paradise, surrounded by Edelweiss flowers.
+			<br/><br/>  
+			- Based on a true story
+			<br/><br/> <br/><br/> <i>
+			Written and designed by Mathis & Nereis
+			<br/><br/>
+			Vector background by Upklyak on freepik.com</i>
+			</p>
+			<a href="depart.html" id="btn2">Back to the start</a>
+			<a href="../../site_statique/statique.html" id="btn3">Next website</a> 
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel = document.getElementById('ciel');
+			
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				aura.style.top = value * 1 + 'px';
+				soleil.style.top = value * 1 + 'px';
+				nuages.style.left = value * 1 + 'px';
+				nuages.style.top = value * 0.6 + 'px';
+				montagne2.style.top = value * 0.6 + 'px';
+				montagne1.style.top = value * 0.4 + 'px';
+				green_boots.style.top = value * 0.4 + 'px';
+				
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>

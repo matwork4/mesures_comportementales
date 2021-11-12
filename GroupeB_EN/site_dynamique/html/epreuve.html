@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Green boots - Event</title>
+		<link rel="stylesheet" type="text/css" href="../styles/image3.css">
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">M1-IC</a>
+			<ul>
+				<li><a href="depart.html">Departure</a></li>
+				<li><a href="ascension.html">Ascension</a></li>
+				<li><a href="#" class="active">Event</a></li>
+				<li><a href="epilogue.html">Epilogue</a></li>
+			</ul>
+		</header>
+		<section>
+			<img src="../assets/image3/rochers.png" id="roches">
+			<img src="../assets/image3/rocher.png" id="rocher">
+			<img src="../assets/image3/humain.png" id="humain">
+			<img src="../assets/image3/ciel_nuit.png" id="ciel">
+			<img src="../assets/image3/etoiles.png" id="etoiles">
+			<img src="../assets/image3/lune.png" id="lune">
+			<img src="../assets/image3/montagnes.png" id="montagnes">
+			<img src="../assets/image3/nuages.png" id="nuages">
+			<img src="../assets/image3/sol_enneige.png" id="neige">
+			<img src="../assets/image3/brume1.png" id="brume1">
+			<img src="../assets/image3/brume2.png" id="brume2">
+
+			
+			<h2 id="text">Event</h2>
+			<a href="#sec" id="btn">Fight</a>
+			
+		</section>
+		<div class="sec" id="sec">
+			<h2>Green boots - Event</h2>
+			<p> The next day, Ahaan set off again. At noon, he had already passed the 6,000 meters! So he rested to have a well-deserved meal. But just as he was about to open his bag of provisions, he heard a loud thump in the bushes. The ground shook and a growl echoed through the valley. It was a black bear cub from Everest! Out of nowhere, it pounced on the bag of provisions and ran away with it. Ahaan couldn't do anything, even if it was only a bear cub, its paw was at least the size of his face. A scratch would have been fatal! Ahaan had no choice, even with an empty stomach, he continued his journey. After all, it had already happened to him not to eat during several days...
+			<br/><br/> 
+			It was getting colder and colder. In addition, at 7,000 meters the lack of oxygen is felt. It was time to take out the oxygen tanks. His muscles began to tense, he was out of breath and still no Edelweiss on the horizon. We had to keep going.  
+			<br/><br/> 
+			His face was peeling, his fingers were barely moving and he couldn't feel his feet. Ahaan could hardly breathe, his last bottle was running out. Evil thoughts crossed his mind, and for the first time he began to regret having come. He even thought of giving up, of turning back, but when he looked up, he saw the top of the mountain in the distance, where the precious white flowers come to life. Ahann gathered his last strength to continue his ascent.
+			<br/><br/> 
+			</p>
+			<a href="epilogue.html" id="btn2">Next step : Epilogue</a>
+		</div>
+
+		<script type="text/javascript">
+
+			let header = document.querySelector('header');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+
+			let ciel = document.getElementById('ciel');
+			let humain = document.getElementById('humain');
+			let etoiles = document.getElementById('etoiles');
+			let lune = document.getElementById('lune');
+			let montagnes = document.getElementById('montagnes');
+			let nuages = document.getElementById('nuages');
+			let rocher = document.getElementById('rocher');
+			let roches = document.getElementById('roches');
+			
+
+			window.addEventListener('scroll',function(){
+				let lWidth = window.screen.width;
+				let value = window.scrollY;
+
+				ciel.style.top = value * 0.8 + 'px';
+				etoiles.style.left = value * -2 + 'px';
+				etoiles.style.top = value * 0.4 + 'px';
+				nuages.style.left = value * 0.6 + 'px' ;
+				nuages.style.top = value * 0.3 + 'px' ;
+				lune.style.top = value * 1.2 + 'px' ;
+				montagnes.style.top = value * 0.6 + 'px' ;
+				rocher.style.top = value * 0.2 + 'px' ;
+
+				brume1.style.left = value * -2 + 'px' ;
+				brume2.style.left = value * 1.2 + 'px' ;
+				
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				text.style.marginLeft = value * 2.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>
