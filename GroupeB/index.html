@@ -1,77 +1,73 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Green boots - Depart </title>
-		<link rel="stylesheet" type="text/css" href="site_dynamique/styles/image1.css">
+		<meta charset="UTF-8">
+		<title>Green boots - Rgpd </title>
+		<script src="rgpd/rgpd.js"></script>
+		<link rel="stylesheet" type="text/css" href="rgpd/rgpd.css">
+
+		
 		<!-- Mat -->
 	</head>
 	<body>
 		<header>
-			<a href="#" class="logo">M1-IC</a>
-			<ul>
-				<li><a href="site_dynamique/html/depart.html" class="active">Le départ</a></li>
-				<li><a href="site_dynamique/html/ascension.html">L'ascension</a></li>
-				<li><a href="site_dynamique/html/epreuve.html">L'épreuve</a></li>
-				<li><a href="site_dynamique/html/epilogue.html">Épilogue</a></li>
-			</ul>
+			<h1 class="head">M1-IC</a>
+			<h1 class="head">Conditions d'utilisation</h1>
 		</header>
-		<section>
-			<img src="site_dynamique/assets/image1/ciel.png" id="ciel">
-			<img src="site_dynamique/assets/image1/montagnes.png" id="mountains_behind">
-			<img src="site_dynamique/assets/image1/terrain.png" id="terrain">
-			<img src="site_dynamique/assets/image1/oiseaux.png" id="oiseaux">
-			<img src="site_dynamique/assets/image1/foret.png" id="forest_front">
-			<img src="site_dynamique/assets/image1/homme.png" id="homme">
 
-			
-			<h2 id="text">Green boots</h2>
-			<a href="#sec" id="btn">Explorer</a>
-			
-		</section>
-		<div class="sec" id="sec">
-			<h2>Green boots - Le départ</h2>
-			<p> Voici l'histoire de Ahaan, né dans un petit village de pêcheurs nommé Kollidam, au Sud de l'Inde. 
-				<br/><br/>
-				Toute sa vie ne se résumait qu'à une chose : sa ferme. C'est ici qu'il cultive le blé et élève ses poules. Mais un jour, Ahaan rencontra Mishka, la fille d'un riche pêcheur du village. Très vite, ils tombèrent fous amoureux l'un de l'autre, Ahaan découvrit une sensation qu'il n'avait encore jamais ressentie auparavant, il était heureux et ne pensait plus qu'à elle. 
-				Malheureusement, le père de Mishka n'était pas de cet avis. Sa fille ne peut pas épouser un « Sudra* », comme il l'appelait. (* Système de caste en Inde.) Malgré ses multiples avertissements et pour qu'ils ne se revoient plus, le père de Mishka prit la décision radicale d'enfermer sa fille lorsqu'il partait en mer. 
-				<br/><br/>
-				Mishka ne voyait presque plus la lumière du soleil, elle déprimait. Un jour, en rentrant chez lui, le vieux pêcheur trouva sa fille allongée sur le sol, tremblante et pleine de sueur. Il appela les meilleurs médecins de Kollidam, les druides, les sorcières, mais personne ne pouvait sauver la pauvre Mishka. L'une des sorcières lui donna alors un espoir : « Une plante peut la sauver : l'Edelweiss givré ! Mais elle ne pousse qu'au sommet des plus hautes montagnes enneigées. » 
-				<br/><br/>
-				La nouvelle se répandit dans tout le village, mais ne vivant pas dans une région montagneuse, sa fille était d'ors et déjà condamnée. Quand Ahaan apprit la nouvelle, il prit son courage à deux mains et se confronta au vieux pêcheur : « Je gravirai l'Everest pour trouver l'edelweiss givré, je sauverai ta fille et tu m'offriras sa main. ». Le père, voyant son dernier espoir, acquiesça d'un signe de la tête à Ahaan, qui partit aussitôt en direction du Népal.
-			<br/><br/> 
-			</p>
-			<a href="site_dynamique/html/ascension.html" id="btn2">Prochaine étape : L'ascension</a>
+		<img id="image_Everest" src="rgpd/evrest.jpg" alt="image Everest">
+
+		<div id="encadrement">
+			<h4>En cliquant sur Accepter, vous confirmez avoir lu et compris les conditions d'utilisation.
+			</h4>
+
+
+			<button onclick="showModal()" class="btn">Conditions d'utilisation</button>
+
+			<a href="site_dynamique/html/depart.html" class="btn">Accepter</a>
 		</div>
 
-		<script type="text/javascript">
-			let ciel = document.getElementById('ciel');
-			let mountains_behind = document.getElementById('mountains_behind');
-			let terrain = document.getElementById('terrain');
-			let text = document.getElementById('text');
-			let btn = document.getElementById('btn');
-			let forest_front = document.getElementById('forest_front');
-			let header = document.querySelector('header');
+		
+		<div id="modal">
+			<div class="modalContent">
+                <div class="modalHeader">
+                    <span class="modalClose" onclick="closeModal()">&times;</span>
+                    <h2>Conditions d'utilisation</h2>
+                </div>
+                <div class="modalBody">
+                    <h2>La collecte et l’utilisation de vos données depuis le site www.pebblegames.fr</h2>
+					<p> Conformément à la Loi Informatique et Libertés, nous vous informons que la collecte des informations dont la saisie est obligatoire dans les formulaires de ce site, est nécessaire au traitement de votre demande.
+					<br/><br/> 
+					Celles-ci ne font l’objet d’aucune diffusion auprès de société tierces et ne sont pas utilisées à des fins publicitaires.
+					<br/><br/> 
+					“Vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi « Informatique et Libertés » du 6 janvier 1978).
+					<br/><br/> 
+					Vous pouvez exercer ce droit par simple demande : pour cela, contactez-nous par email ou par courrier postal.
+					<br/><br/> 
+					</p>
 
-			let homme = document.getElementById('homme');
-			let oiseaux = document.getElementById('oiseaux');
-			
+					<h2>Le consentement</h2>
+					<p>Toute donnée collectée sur notre site www.pebblegames.fr est soumise au consentement express de l’utilisateur. Chaque formulaire collectant des données personnelles mentionnent de manière simple et explicite les conditions d’utilisation de leurs données personnelles.
+					<br/><br/> 
+					Celui-ci est par ailleurs informé du traitement de ses données personnelles, consigné dans un registre dédié et conforme aux recommandations de la RGPD.
+					<br/><br/> 
+					L’utilisateur du site www.pebblegames.fr peut à tout moment exercer son droit de retrait de consentement à l’utilisation de ses données personnelles. Pour cela, il lui suffit de nous en faire la demande par email.
+					<br/><br/> 
+					</p>
 
-			window.addEventListener('scroll',function(){
-				let lWidth = window.screen.width;
-				let value = window.scrollY;
+					<h2>Le droit d’accès à ses données personnelles</h2>
+					<p>L’utilisateur du site www.pebblegames.fr peut à tout moment exercer son droit d’accès à ses données personnelles. Pour cela, il lui suffit de nous en faire la demande par email (justenereis@gmail.com).
+					<br/><br/> 
+					Pour connaître les conditions d’utilisation des données personnelles traitées sur le site www.pebblegames.fr, vous pouvez consulter directement en ligne le registre de traitement.
+					<br/><br/> 
+					</p>
+                </div>
+            </div>
+		</div>
 
-				ciel.style.top = value * 0.8 + 'px';
-				mountains_behind.style.top = value * 0.6 + 'px';
-				terrain.style.top = value * 0.4 + 'px';
-				oiseaux.style.left = value * -2 + 'px';
-				oiseaux.style.top = value * 0.4 + 'px';
 
-				text.style.marginLeft = value * 2.5 + 'px';
-				btn.style.marginTop = value * 1.5 + 'px';
-				header.style.top = value * 0.5 + 'px';
 
-			})
-		</script>
+		
 
 	</body>
 </html>

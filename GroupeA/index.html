@@ -1,88 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Boots</title>
-    <link href="site_statique/CSS/style.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <div>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Green boots - Rgpd </title>
+		<script src="rgpd/rgpd.js"></script>
+		<link rel="stylesheet" type="text/css" href="rgpd/rgpd.css">
+
+		
+		<!-- Mat -->
+	</head>
+	<body>
+		<header>
+			<h1 class="head">M1-IC</a>
+			<h1 class="head">Conditions d'utilisation</h1>
+		</header>
+
+		<img id="image_Everest" src="rgpd/evrest.jpg" alt="image Everest">
+
+		<div id="encadrement">
+			<h4>En cliquant sur Accepter, vous confirmez avoir lu et compris les conditions d'utilisation.
+			</h4>
 
 
-        <ul>
-            <li id="titre">Green Boots</li>
-            <li><a href="#depart">Le départ</a></li>
-            <li><a href="#ascension">L'ascension</a></li>
-            <li><a href="#epreuve">L'épreuve</a></li>
-            <li><a href="#epilogue">Épilogue</a></li>
-        </ul>
-    </div>
-    <img id="image_Everest" src="site_statique/IMAGE/evrest.jpg" alt="image Everest">
-    
-    <div class="contenu">
-        <h3 id="depart">Le départ</h3>
-        <div class="texte">
+			<button onclick="showModal()" class="btn">Conditions d'utilisation</button>
 
-            <p> Voici l'histoire de Ahaan, né dans un petit village de pêcheurs nommé Pokhara, au Sud du Népal . 
-                <br/><br/>
-                Toute sa vie ne se résumait qu'à une chose : sa ferme. C'est ici qu'il cultive le blé et élève ses poules. Mais un jour, Ahaan rencontra Mishka, la fille d'un riche pêcheur du village. Très vite, ils tombèrent fous amoureux l'un de l'autre, Ahaan découvrit une sensation qu'il n'avait encore jamais ressentie auparavant, il était heureux et ne pensait plus qu'à elle. 
-                Malheureusement, le père de Mishka n'était pas de cet avis. Sa fille ne peut pas épouser un paysan, comme il l'appelait. Malgré ses multiples avertissements et pour qu'ils ne se revoient plus, le père de Mishka prit la décision radicale d'enfermer sa fille lorsqu'il partait en mer. 
-                <br/><br/>
-                Mishka ne voyait presque plus la lumière du soleil, elle déprimait. Un jour, en rentrant chez lui, le vieux pêcheur trouva sa fille allongée sur le sol, tremblante et pleine de sueur. Il appela les meilleurs médecins de Pokhara, les druides, les sorcières, mais personne ne pouvait sauver la pauvre Mishka. L'une des sorcières lui donna alors un espoir : « Une écorce peut la sauver : Le Tremble Argentée ! Mais elle ne pousse qu'au sommet des plus hautes montagnes enneigées. » 
-                <br/><br/>
-                La nouvelle se répandit dans tout le village, mais ne vivant pas dans une région montagneuse, sa fille était d'ors et déjà condamnée. Quand Ahaan apprit la nouvelle, il prit son courage à deux mains et se confronta au vieux pêcheur : « Je gravirai l'Himalaya pour trouver une écorce de Tremble Argentée, je sauverai ta fille et tu m'offriras sa main. ». Le père, voyant son dernier espoir, acquiesça d'un signe de la tête à Ahaan, qui partit aussitôt en direction du Népal.
-			<br/><br/> 
-			</p><img src="site_statique/IMAGE/img_depart.jpg" alt="">
+			<a href="site_statique/statique.html" class="btn">Accepter</a>
+		</div>
 
+		
+		<div id="modal">
+			<div class="modalContent">
+                <div class="modalHeader">
+                    <span class="modalClose" onclick="closeModal()">&times;</span>
+                    <h2>Conditions d'utilisation</h2>
+                </div>
+                <div class="modalBody">
+                    <h2>La collecte et l’utilisation de vos données depuis le site www.pebblegames.fr</h2>
+					<p> Conformément à la Loi Informatique et Libertés, nous vous informons que la collecte des informations dont la saisie est obligatoire dans les formulaires de ce site, est nécessaire au traitement de votre demande.
+					<br/><br/> 
+					Celles-ci ne font l’objet d’aucune diffusion auprès de société tierces et ne sont pas utilisées à des fins publicitaires.
+					<br/><br/> 
+					“Vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi « Informatique et Libertés » du 6 janvier 1978).
+					<br/><br/> 
+					Vous pouvez exercer ce droit par simple demande : pour cela, contactez-nous par email ou par courrier postal.
+					<br/><br/> 
+					</p>
+
+					<h2>Le consentement</h2>
+					<p>Toute donnée collectée sur notre site www.pebblegames.fr est soumise au consentement express de l’utilisateur. Chaque formulaire collectant des données personnelles mentionnent de manière simple et explicite les conditions d’utilisation de leurs données personnelles.
+					<br/><br/> 
+					Celui-ci est par ailleurs informé du traitement de ses données personnelles, consigné dans un registre dédié et conforme aux recommandations de la RGPD.
+					<br/><br/> 
+					L’utilisateur du site www.pebblegames.fr peut à tout moment exercer son droit de retrait de consentement à l’utilisation de ses données personnelles. Pour cela, il lui suffit de nous en faire la demande par email.
+					<br/><br/> 
+					</p>
+
+					<h2>Le droit d’accès à ses données personnelles</h2>
+					<p>L’utilisateur du site www.pebblegames.fr peut à tout moment exercer son droit d’accès à ses données personnelles. Pour cela, il lui suffit de nous en faire la demande par email (justenereis@gmail.com).
+					<br/><br/> 
+					Pour connaître les conditions d’utilisation des données personnelles traitées sur le site www.pebblegames.fr, vous pouvez consulter directement en ligne le registre de traitement.
+					<br/><br/> 
+					</p>
+                </div>
             </div>
-        <h3 id="ascension">L'ascension</h3>
-        <div class="texte">
-            <img src="site_statique/IMAGE/img-ascensions.jpg" alt="" >
-            <p> Tout juste arrivé au pied de cette montagne imposante, Ahaan se rendit compte qu'il ne pourrait pas trouver seul son chemin avec une simple carte. Toujours déterminé, il se rendit donc à Katmandou, la ville la plus proche, afin de s'offrir les services d’un sherpas pour l’accompagner dans ce périlleux voyage malgré ses maigres économies.  
-                <br/><br/> 
-                Une fois parés, ils commencèrent leur ascension en suivant les sentiers principaux. Sur leur chemin, ils y croisèrent des habitués de la montagne se baladant et voulant parfois discuter avec le binôme. Mais Ahaan n'avait pas de temps à perdre ! Il n'avait qu'un objectif en tête : trouver l’écorce de Tremble Argentée pour la ramener. 
-                <br/><br/> 
-                Ils montèrent, montèrent et arrivèrent jusqu'à 3000 mètres d'altitude. Ils se trouvèrent alors devant un magnifique mais rustique pont suspendu, dont ils entamèrent la périlleuse traversée. Aussitôt dit aussitôt fait, le vent se mit à souffler. Le souffle s’engouffrait dans les cordes du pont, ce qui fit vaciller Ahaan de gauche à droite. Le sherpas était terrifié, mais Ahaan repensa alors à sa promise et continua d'avancer d'un pas ferme. Tandis que la faim et le froid commencèrent à se faire sentir, le pont quand à lui tanguait de plus en plus, quand soudain... Son pied toucha le sol. Ils étaient arrivés de l'autre côté ! 
-                <br/><br/> 
-                Il était temps pour eux de trouver un abri et de s'y réfugier pour la nuit. Heureusement, ils disposaient de tout le matériel nécessaire. Ils se préparèrent un bon repas chaud puis s'endormirent rapidement, jusqu'au lendemain...
-            <br/><br/> 
-            </p>
+		</div>
 
-            
-        </div>
 
-        <h3 id="epreuve">L'épreuve</h3>
-        <div class="texte">
 
-            <p> Le lendemain au réveil, le sherpas avait disparu ! Laissant derrière lui des provisions pour Ahaan. Une multitude de questions coururent dans son esprit, mais Ahaan se remit en chemin. 
-                <br/><br/> 
-                À midi, il avait déjà dépassé les 6 000 mètres ! Il se reposa donc pour prendre un repas bien mérité. Mais au moment d'ouvrir son sac de provisions, il entendit un bruit sec et sonore dans les buissons. Le sol se mit à trembler et un grognement raisonna dans toute la vallée. C'était un loup blanc de l’Himalaya ! Sortant de nulle part, il se jeta sur le sac de provisions et s'enfuiya avec. Ahaan ne put rien faire, même si ce n'était qu’un loup, ses crocs faisaient au moins la taille de sa main. Une morsure lui aurait été fatale ! Ahaan n’avait plus le choix, même avec le ventre vide, il continua son périple. Après tout, il lui était déjà arrivé de ne pas manger pendant plusieurs jours...
-                <br/><br/> 
-                Il faisait de plus en plus froid. Ses muscles commencèrent à se tendre, il était à bout de souffle et toujours aucun arbre qui ressemblerait à un Tremble à l’horizon. Il fallait continuer. 
-                <br/><br/> 
-                Son visage pelait, ses doigts bougeaient à peine et il ne sentait plus ses pieds. Ahaan avait du mal à respirer, sa dernière bouteille se vidait à vue d'œil. Des pensées néfastes traversèrent son esprit, il commença pour la première fois à regretter d'être venu. Il pensa même à renoncer, à faire demi-tour, mais quand il leva la tête, il aperçut au loin le sommet de la montagne, là où poussent les trembles de haute altitude. Ahaan regroupa ses dernières forces pour continuer son ascension.
+		
 
-                <br/><br/> 
-                </p><img src="site_statique/IMAGE/img_epreuve.jpg" alt="">
-
-        </div>
-        <h3 id="epilogue">Épilogue</h3>
-        <div class="texte">
-            <img src="site_statique/IMAGE/img_epilogie.jpg" alt="">
-            <p> Ahaan était maintenant à 8 400 mètres d'altitude, mais son corps lâcha. Il se trouvait à terre, il ne voulait pas abandonner. Il se mit à ramper dans la neige, Mishka n'était plus que sa seule pensée, il devait la sauver. Un Tremble était à seulement quelques mètres, mais Ahaan était à bout de forces. Il tendit le bras et trébucha dans un lac gelée. Ahaan s’en était allé, son corps lui resta là, figé par la glace, au pied de l’arbre qui aurait pu sauver sa bien aimée.
-                <br/><br/>
-                Aujourd’hui encore, le corps d’Ahaan est conservé par la glace. Il repose à 8 460 mètres d’altitude. Ses bottes vertes sont devenues un symbole, un repère pour ceux qui gravissent l’Himalaya. Nous ne savons pas ce qui est arrivé à Mishka, mais nous pouvons le deviner. Peut-être se sont-ils retrouvés là-haut au paradis, entourés de Tremble Argentée.
-                <br/><br/> 
-                </p>
-
-        </div>
-    </div>
-    <a href="#" id="button">Haut</a>  
-    <a href="site_dynamique/html/depart.html" id="button2">Site suivant</a>  
-</div>
-
-</body>
+	</body>
 </html>
